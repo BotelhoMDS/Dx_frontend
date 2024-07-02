@@ -1,0 +1,60 @@
+.foot {
+
+    margin-top: 20px;
+    background-color: #000;
+}
+.footer {
+
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-text {
+    text-align: left;
+  }
+  
+  .footer-text p {
+    font-family: "IBM Plex Mono", "sans-serif";
+    margin: 0;
+  }
+  
+  .footer-logo img {
+    width: 75px; /* Ajuste o tamanho conforme necessário */
+    height: 72px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-icons a {
+    color: white;
+    font-size: 1.5em; /* Ajuste o tamanho do ícone conforme necessário */
+  }
+  
+  .footer-icons a:hover {
+    color: #ddd; /* Cor do ícone ao passar o mouse */
+  }
+  
+ 
+  .footer::before {
+    top: -10px;
+  }
+  
+  .footer::after {
+    bottom: -10px;
+  }
+  .footer-logo img {
+    cursor: pointer;
+  }
+  
+  

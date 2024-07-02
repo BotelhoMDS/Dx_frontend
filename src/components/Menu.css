@@ -1,0 +1,70 @@
+/* Importando a fonte */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Estilização da fonte */
+.ibm-plex-mono-thin {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Outras classes de fonte (mantidas conforme fornecido) */
+.ibm-plex-mono-extralight { font-family: "IBM Plex Mono", monospace; font-weight: 200; font-style: normal; }
+.ibm-plex-mono-light { font-family: "IBM Plex Mono", monospace; font-weight: 300; font-style: normal; }
+.ibm-plex-mono-regular { font-family: "IBM Plex Mono", monospace; font-weight: 400; font-style: normal; }
+.ibm-plex-mono-medium { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-style: normal; }
+.ibm-plex-mono-semibold { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-style: normal; }
+.ibm-plex-mono-bold { font-family: "IBM Plex Mono", monospace; font-weight: 700; font-style: normal; }
+.ibm-plex-mono-thin-italic { font-family: "IBM Plex Mono", monospace; font-weight: 100; font-style: italic; }
+.ibm-plex-mono-extralight-italic { font-family: "IBM Plex Mono", monospace; font-weight: 200; font-style: italic; }
+.ibm-plex-mono-light-italic { font-family: "IBM Plex Mono", monospace; font-weight: 300; font-style: italic; }
+.ibm-plex-mono-regular-italic { font-family: "IBM Plex Mono", monospace; font-weight: 400; font-style: italic; }
+.ibm-plex-mono-medium-italic { font-family: "IBM Plex Mono", monospace; font-weight: 500; font-style: italic; }
+.ibm-plex-mono-semibold-italic { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-style: italic; }
+.ibm-plex-mono-bold-italic { font-family: "IBM Plex Mono", monospace; font-weight: 700; font-style: italic; }
+
+/* Estilização da lista e dos itens */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px; /* altura da barra de navegação */
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilização dos links */
+ul li a {
+  font-family: "IBM Plex Mono", "sans-serif";
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 15px;
+  transition: background 1s;
+}
+
+ul li a:hover {
+  color:antiquewhite ;
+}
+ul li a:active {
+  color:rgb(0, 0, 0) ;
+}
+
+/* Estilização da logo */
+.logo {
+  width: 66px;
+  height: 63px;
+}
+
+/* Estilização do nav ou header com bordas */
+nav {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
