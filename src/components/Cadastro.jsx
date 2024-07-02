@@ -1,25 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cadastro.css';
-import logo from './figure/dxbranco.svg'; // Caminho correto para o logo
+import logo from './figure/dxbranco.svg'; 
 
 export default function Cadastro() {
+    const [nome, setNome] = useState('');
+    const [cpf, setCpf] = useState('');
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [confirmSenha, setConfirmSenha] = useState('');
+    const [dashboard, setDashboard] = useState(false);
+    const [servicos, setServicos] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (senha !== confirmSenha) {
+            alert("As senhas não coincidem");
+            return;
+        }
+        const newUser = { nome, cpf, email, senha, dashboard, servicos };
+        try {
+            const response = await fetch(`https://${process.env.REACT_APP_API_URL}/usuarios`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(newUser)
+            });
+            if (response.ok) {
+                alert("Usuário cadastrado com sucesso!");
+                window.location.href = "/login";
+            } else {
+                alert("Erro ao cadastrar usuário");
+            }
+        } catch (error) {
+            console.error("Erro ao cadastrar usuário:", error);
+        }
+    };
+
     return (
         <div className="cadastro-container">
             <h1>Seja bem-vinda(o) a Dx.!</h1>
             <div className="form-container">
                 <img src={logo} alt="DX logo" className="form-logo" />
-                <form>
-                    <input type="text" placeholder="Nome Completo" />
-                    <input type="text" placeholder="CPF" />
-                    <input type="email" placeholder="E-mail" />
-                    <input type="password" placeholder="Password" />
-                    <input type="password" placeholder="Confirm Password" />
+                <form onSubmit={handleSubmit}>
+                    <input type="text" placeholder="Nome Completo" value={nome} onChange={(e) => setNome(e.target.value)} required />
+                    <input type="text" placeholder="CPF" value={cpf} onChange={(e) => setCpf(e.target.value)} required />
+                    <input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input type="password" placeholder="Senha" value={senha} onChange={(e) => setSenha(e.target.value)} required />
+                    <input type="password" placeholder="Confirmar Senha" value={confirmSenha} onChange={(e) => setConfirmSenha(e.target.value)} required />
+                    <label>
+                        Dashboard:
+                        <input type="checkbox" checked={dashboard} onChange={(e) => setDashboard(e.target.checked)} />
+                    </label>
+                    <label>
+                        Serviços:
+                        <input type="checkbox" checked={servicos} onChange={(e) => setServicos(e.target.checked)} />
+                    </label>
                     <div className="buttons">
                         <button type="submit" className="btn btn-light">Enviar</button>
                         <button type="button" className="btn btn-light" onClick={() => window.location.href = "/login"}>Login</button>
                     </div>
                 </form>
-
             </div>
         </div>
     );

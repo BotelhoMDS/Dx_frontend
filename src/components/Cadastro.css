@@ -67,3 +67,8 @@ form input {
 .buttons button:hover {
     background-color: #5c5959;
 }
+form label {
+    color: white; 
+    display: block; 
+    margin-top: 1em; 
+}
