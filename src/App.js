@@ -24,7 +24,7 @@ function App() {
     <img src={home} alt="home" className='home' />
     <div class="texto-sobre-imagem">
       <p>As soluções dos seus problemas a um toque</p>
-      <a href="/" class="btn btn-light" >Descubra</a>
+      <a href="https://www.figma.com/proto/iZ6RQruJHpm6qiTomCiUro/DX-Site?node-id=70-69&t=exJCSALrfhDh5TBX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="btn btn-light" >Descubra</a>
     </div>
   </div>
 
@@ -37,7 +37,7 @@ function App() {
             <p>Produto: Dashboard de dados eleitorais</p>
           </div>
           <div className="grid-item">
-            <a href="https://sigaa.unifei.edu.br/sigaa/expirada.jsp"><img src={figure2} alt="Produto: Bots para pesquisa eleitoral" /></a>
+            <a href="https://www.figma.com/proto/iZ6RQruJHpm6qiTomCiUro/DX-Site?node-id=70-69&t=exJCSALrfhDh5TBX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"><img src={figure2} alt="Produto: Bots para pesquisa eleitoral" /></a>
             <p>Produto: Bots para pesquisa eleitoral</p>
           </div>
           <div className="grid-item">
