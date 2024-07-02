@@ -24,6 +24,7 @@ const Login = () => {
             } else {
                 alert('Login ou senha incorretos');
             }
+            console.log('response:', response);
         } catch (error) {
             console.error('Erro ao fazer login:', error);
         }
