@@ -16,7 +16,8 @@ export default function Cadastro() {
         }
         const newUser = { nome, cpf, email, senha };
         try {
-            const response = await fetch(`https://${process.env.REACT_APP_API_URL}/usuarios`, {
+            console.log(`cadastro em http://${process.env.REACT_APP_API_URL}/usuarios `)
+            const response = await fetch(`http://${process.env.REACT_APP_API_URL}/usuarios`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
