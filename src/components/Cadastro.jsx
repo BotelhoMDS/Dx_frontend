@@ -8,16 +8,13 @@ export default function Cadastro() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [confirmSenha, setConfirmSenha] = useState('');
-    const [dashboard, setDashboard] = useState(false);
-    const [servicos, setServicos] = useState(false);
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (senha !== confirmSenha) {
             alert("As senhas não coincidem");
             return;
         }
-        const newUser = { nome, cpf, email, senha, dashboard, servicos };
+        const newUser = { nome, cpf, email, senha };
         try {
             const response = await fetch(`https://${process.env.REACT_APP_API_URL}/usuarios`, {
                 method: 'POST',
@@ -48,14 +45,7 @@ export default function Cadastro() {
                     <input type="email" placeholder="E-mail" value={email} onChange={(e) => setEmail(e.target.value)} required />
                     <input type="password" placeholder="Senha" value={senha} onChange={(e) => setSenha(e.target.value)} required />
                     <input type="password" placeholder="Confirmar Senha" value={confirmSenha} onChange={(e) => setConfirmSenha(e.target.value)} required />
-                    <label>
-                        Dashboard:
-                        <input type="checkbox" checked={dashboard} onChange={(e) => setDashboard(e.target.checked)} />
-                    </label>
-                    <label>
-                        Serviços:
-                        <input type="checkbox" checked={servicos} onChange={(e) => setServicos(e.target.checked)} />
-                    </label>
+                  
                     <div className="buttons">
                         <button type="submit" className="btn btn-light">Enviar</button>
                         <button type="button" className="btn btn-light" onClick={() => window.location.href = "/login"}>Login</button>

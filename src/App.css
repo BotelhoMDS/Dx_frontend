@@ -46,7 +46,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -63,17 +62,30 @@
 }
 
 .imagem-com-texto {
+  
   font-family: "IBM Plex Mono", "sans-serif";
   position: relative; /* Permite posicionar o texto sobre a imagem */
+  border-bottom: 2px solid white;
 }
 .home {
   
-  height:  50vh; /* Mantém a altura da imagem */
+
+  border-bottom: 50px solid rgb(0, 0, 0);
+}
+.line {
+            position: relative; /* Posiciona a linha em relação ao bloco */
+            top: 50px; /* Distância do topo do bloco */
+            left: 10%; /* Distância da esquerda do bloco */
+            width: 70%; /* Comprimento da linha */
+            height: 2px; /* Espessura da linha */
+            background-color: white; /* Cor da linha */
+        }
+.homeImg {
+  
+  height:  55vh; /* Mantém a altura da imagem */
   width: 100%;
   display: block; /* Exibe a imagem como um elemento de bloco */
   align-self: center; /* Alinha a imagem no centro */
-  
-
 }
 .texto-sobre-imagem {
   position: absolute; /* Posiciona o texto absolutamente dentro da imagem */
@@ -119,29 +131,28 @@
 
 .grid-item p {
   position: absolute;
-  bottom: 10px;
+  bottom: 80%;
   left: 10px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
 }
 
 .why-dx {
-  
-  height: 633px;
-  padding: 20px;
-  background-color: #000000;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    height: 633px;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha os itens à esquerda */
 }
 
 .why-dx h2 {
   font-family: "IBM Plex Mono", "sans-serif";
   font-size: 2em;
   margin-bottom: 0.5em;
-  align-self: center;
+  align-self: left;
 
 }
 
@@ -157,6 +168,7 @@
   font-size: 1.5em;
   font-style: italic;
   margin-top: 4em;
+  align-self: flex-end;
 }
 
 .section-dx{
@@ -205,23 +217,6 @@
   color: #ddd; /* Cor do ícone ao passar o mouse */
 }
 
-.footer::before, .footer::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: white;
-  position: absolute;
-  left: 0;
-}
-
-.footer::before {
-  top: -10px;
-}
-
-.footer::after {
-  bottom: -10px;
-}
 .footer-logo img {
   cursor: pointer;
 }

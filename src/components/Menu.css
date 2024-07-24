@@ -67,4 +67,5 @@ ul li a:active {
 nav {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
+  background-color: black;
 }

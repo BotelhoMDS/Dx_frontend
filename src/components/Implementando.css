@@ -1,0 +1,47 @@
+/* src/pages/FuncionalidadePage.css */
+.funcionalidade-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle at 50% 50%, #ffffff, #000000);
+    padding: 20px;
+}
+
+.funcionalidade-content {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.funcionalidade-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.funcionalidade-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.funcionalidade-footer {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.funcionalidade-footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.funcionalidade-footer a:hover {
+    text-decoration: underline;
+}
