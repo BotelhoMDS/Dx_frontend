@@ -24,7 +24,7 @@ function App() {
           <img src={home} alt="home" className='homeImg' />
           <div class="texto-sobre-imagem">
             <p>As soluções dos seus problemas a um toque</p>
-            <a href="https://www.figma.com/proto/iZ6RQruJHpm6qiTomCiUro/DX-Site?node-id=70-69&t=exJCSALrfhDh5TBX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="btn btn-light" >Descubra</a>
+            <a href="https://www.figma.com/proto/iZ6RQruJHpm6qiTomCiUro/DX-Site?node-id=70-69&t=exJCSALrfhDh5TBX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="btn btn-custom" >Descubra</a>
           </div>
         </div>
 
