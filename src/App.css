@@ -220,4 +220,17 @@
 .footer-logo img {
   cursor: pointer;
 }
+.btn-custom {
+  color: #ffffff;
+  border: solid 2px #ffffff;
+  padding: 15px 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
 
