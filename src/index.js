@@ -9,6 +9,7 @@ import Login from './components/Login';
 import Cadastro from './components/Cadastro';
 import UserDetails from './components/UserDetails';
 import Implementando from './components/Implementando';
+import ProfilePage from './components/Profile';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
@@ -18,6 +19,7 @@ root.render(
             <Route path="login" element={<Login />} />
             <Route path="cadastro" element={<Cadastro />} />
             <Route path="/user-details" element={<UserDetails />} />
+            <Route path='/profile' element={<ProfilePage></ProfilePage>}/>
             <Route path='Implementando' element = {<Implementando/>} />
         </Routes>
         <Footer />

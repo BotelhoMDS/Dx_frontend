@@ -38,7 +38,7 @@ const Login = () => {
                 <input type="text" placeholder="Login" className="login-input" value={nome} onChange={(e) => setNome(e.target.value)} />
                 <input type="password" placeholder="Senha" className="login-input" value={senha} onChange={(e) => setSenha(e.target.value)} />
                 <div className="login-buttons">
-                    <button className="btn btn-light" onClick={handleLogin}>Entrar</button>
+                    <button className="btn btn-light" onClick={navigate('/profile')}>Entrar</button>
                     <button type="button" className="btn btn-light" onClick={() => navigate('/cadastro')}>Cadastrar</button>
                 </div>
                 <a href="/" className="forgot-password">Esqueci minha senha</a>
