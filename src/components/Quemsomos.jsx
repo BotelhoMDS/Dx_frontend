@@ -74,7 +74,7 @@ const QuemSomos = () => {
                     src={logo}
                     alt={member.name}
                   />
-                  <Carousel.Caption>
+                  <Carousel.Caption className="custom-caption">
                     <h3>{member.name}</h3>
                     <p>{member.description}</p>
                   </Carousel.Caption>
