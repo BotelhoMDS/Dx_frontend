@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Profile.css';
-
+import logo from './figure/LogoDX.png'
 function ProfilePage() {
   const [selectedOption, setSelectedOption] = useState('');
 
@@ -20,12 +20,12 @@ function ProfilePage() {
         return <h1>Conteudo Inicial</h1>;
     }
   };
-
+  
   return (
     <div className="black-background-page">
       <div className="left-side">
         <div className="profile-circle">
-          <img src="/path/to/profile-image.jpg" alt="Profile" className="profile-image" />
+          <img src={logo} alt="Profile" className="profile-image" />
         </div>
         <div className="options">
           <div
