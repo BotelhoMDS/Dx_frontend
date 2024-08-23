@@ -9,9 +9,9 @@ export default function Menu() {
  <nav>
  <ul>
  <li><Link to="/produtos"> Produtos </Link> </li>
- <li><Link to="/cadastro"> Serviços </Link> </li>
+ <li><Link to="/serviços"> Serviços </Link> </li>
  <li><Link to="/"><img src={logo} alt="logo" className='logo' /></Link></li>
- <li><Link to="/quem_somos_nos"> Quem somos nós? </Link></li>
+ <li><Link to="/quemsomos"> Quem somos nós? </Link></li>
  <li><Link to="/login"> Conta </Link></li>
  </ul>
  </nav>

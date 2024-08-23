@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Profile.css';
 
 function ProfilePage() {
-  const [selectedOption, setSelectedOption] = useState('Produtos');
+  const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
@@ -17,7 +17,7 @@ function ProfilePage() {
       case 'Produtos':
         return <h1>Conteúdo dos Produtos</h1>;
       default:
-        return <h1>Selecione uma opção</h1>;
+        return <h1>Conteudo Inicial</h1>;
     }
   };
 

@@ -8,7 +8,7 @@ const Implementando = () => {
                 <h1 className="funcionalidade-title">Funcionalidade para Implementação</h1>
                 <p className="funcionalidade-text">Esta página está em desenvolvimento. Em breve, você encontrará mais informações sobre a funcionalidade que será implementada.</p>
                 <div className="funcionalidade-footer">
-                    <p>Voltar para <a href="/">a página inicial</a></p>
+                    <p><a href="/">Voltar para a página inicial</a></p>
                 </div>
             </div>
         </div>

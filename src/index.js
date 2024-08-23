@@ -10,6 +10,8 @@ import Cadastro from './components/Cadastro';
 import UserDetails from './components/UserDetails';
 import Implementando from './components/Implementando';
 import ProfilePage from './components/Profile';
+import Quemsomos from './components/Quemsomos';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
@@ -20,7 +22,8 @@ root.render(
             <Route path="cadastro" element={<Cadastro />} />
             <Route path="/user-details" element={<UserDetails />} />
             <Route path='/profile' element={<ProfilePage></ProfilePage>}/>
-            <Route path='Implementando' element = {<Implementando/>} />
+            <Route path='/implementando' element = {<Implementando/>} />
+            <Route path='/quemsomos' element={<Quemsomos />} />
         </Routes>
         <Footer />
     </BrowserRouter>

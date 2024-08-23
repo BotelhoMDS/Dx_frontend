@@ -24,7 +24,7 @@ function App() {
           <img src={home} alt="home" className='homeImg' />
           <div class="texto-sobre-imagem">
             <p>As soluções dos seus problemas a um toque</p>
-            <a href="https://www.figma.com/proto/iZ6RQruJHpm6qiTomCiUro/DX-Site?node-id=70-69&t=exJCSALrfhDh5TBX-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="btn btn-custom" >Descubra</a>
+            <a href="/implementando" class="btn btn-custom" >Descubra</a>
           </div>
         </div>
 
@@ -35,39 +35,39 @@ function App() {
       <div className="section-dx">
         <div className="grid-container">
           <div className="grid-item">
-            <Link to="/Implementando"> {/* Altere "/nova-rota" para a rota desejada */}
+            <Link to="/implementando"> 
             <img src={figure1} alt="Produto: Dashboard de dados eleitorais" />
             
             </Link>
             <p>Produto: Dashboard de dados eleitorais</p>
           </div>
           <div className="grid-item">
-            <Link to="/Implementando"> {/* Altere "/nova-rota" para a rota desejada */}
+            <Link to="/implementando"> 
               <img src={figure2} alt="Produto: Bots para pesquisa eleitoral" />
              
             </Link>
             <p>Produto: Bots para pesquisa eleitoral</p>
           </div>
           <div className="grid-item">
-            <Link to="/Implementando"> {/* Altere "/nova-rota" para a rota desejada */}
+            <Link to="/implementando"> 
             <img src={figure3} alt="Produto: Apoio na tomada de decisões em campanhas" />
             </Link>
             <p>Produto: Apoio na tomada de decisões em campanhas</p>
           </div>
           <div className="grid-item">
-            <Link to="/Implementando"> {/* Altere "/nova-rota" para a rota desejada */}
+            <Link to="/implementando"> 
             <img src={figure6} alt="Serviço: Transição de plataforma de BI" />
             </Link>
             <p>Serviço: Transição de plataforma de BI</p>
           </div>
           <div className="grid-item">
-            <Link to="/Implementando"> {/* Altere "/nova-rota" para a rota desejada */}
+            <Link to="/implementando"> 
             <img src={figure5} alt="Serviço: Consultoria em dados" />
             </Link>
             <p>Serviço: Consultoria em dados</p>
           </div>
           <div className="grid-item">
-            <Link to="/Implementando"> {/* Altere "/nova-rota" para a rota desejada */}
+            <Link to="/implementando"> 
             <img src={figure4} alt="Serviço: Outros" />
             </Link>
             <p>Serviço: Outros</p>

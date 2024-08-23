@@ -1,0 +1,155 @@
+.image-container {
+  height: 100vh;
+}
+
+.img-fullscreen-width {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Escolha uma cor que contraste bem com a imagem */
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  
+  text-align: center;
+}
+
+
+.content-section {
+  padding: 20px;
+  background-color: black;
+  color: white; /* Mantenha consistente com o design */
+  text-align: center;
+}
+
+.content-section h1, .content-section h2 {
+  margin: 20px 0;
+}
+
+.content-section p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+.text-container {
+  display: flex;
+  justify-content: space-between; /* Espaça uniformemente os elementos */
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
+  
+  height: 50vh;
+}
+
+.Text1, .Text2 {
+  flex: 1; /* Faz com que ambos os textos ocupem o mesmo espaço */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.Text1 p, .Text2 p {
+  margin-left: 100px; /* Remove a margem padrão dos parágrafos */
+  margin-right: 250px;
+  margin-top: 100px;
+}
+.team-section {
+  margin-top: 40px;
+  height: 10vh;
+}
+
+.section-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  
+}
+.nav-button {
+  border: none;
+  color: white;
+
+  padding-right: 200px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+   /* Adiciona um espaço à direita de cada botão */
+}
+
+
+/* Estilo para o botão ativo */
+.nav-button.active {
+  color: #007bff; /* Ajuste a cor conforme necessário */
+  text-decoration: underline;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  text-align: center;
+  
+}
+
+.card-image {
+  width: 100%;
+  
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.25rem;
+}
+
+.card p {
+  font-size: 0.875rem;
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  
+}
+
+
+/* Estiliza o contêiner da imagem do carrossel */
+.carousel-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  
+}
+
+/* Estiliza o círculo de perfil */
+.carousel-caption .profile-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+.carousel{
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estiliza a legenda do carrossel */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+
+
