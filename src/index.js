@@ -11,6 +11,7 @@ import UserDetails from './components/UserDetails';
 import Implementando from './components/Implementando';
 import ProfilePage from './components/Profile';
 import Quemsomos from './components/Quemsomos';
+import Produto from './components/Produto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,6 +25,7 @@ root.render(
             <Route path='/profile' element={<ProfilePage></ProfilePage>}/>
             <Route path='/implementando' element = {<Implementando/>} />
             <Route path='/quemsomos' element={<Quemsomos />} />
+            <Route path='/produtos' element = {<Produto/>}/>
         </Routes>
         <Footer />
     </BrowserRouter>
